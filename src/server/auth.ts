@@ -93,7 +93,7 @@ export const authOptions: NextAuthOptions = {
           },
         });
 
-        if (!user ) {
+        if (!user ) {             //    if (!user || !(await compare(credentials.password, user.password))) {
           return null;
         }
 
